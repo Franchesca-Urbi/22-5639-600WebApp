@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,56 @@
     <title>html_exercise</title>
 </head>
 <style>
-    body{
-        background-color: rgb(241,165,241);
+    body {
+        background-color: rgb(241, 165, 241);
     }
-    div.navBar{
+
+    div.navBar {
         margin: 5px;
         padding: 10px;
         background-color: purple;
         box-shadow: 1px 1px 5px;
     }
-    a.navs{
+
+    a.navs {
         color: white;
         font-size: 1.5em;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    div.infoCon {
+        background-color: rgb(137, 50, 137);
+        min-width: 400px;
+        padding: 15px;
+        box-shadow: 1px 1px 5px;
+        border-radius: 5px;
+    }
+
+    form.formIn {
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    input[type=text],
+    input[type=password] {
+        border-radius: 5px;
+    }
+
+    table.userTable {
+        background-color: rgb(241, 165, 241);
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    td,
+    th {
+        text-align: center;
+    }
+
+    footer {
+        padding: 3px;
+        margin: 50px 0 0 0;
+        text-align: center;
     }
 </style>
 
@@ -32,42 +71,59 @@
             </nav>
         </div>
     </header>
-    <!--Section for Image and Figure Caption-->
-    <section></section>
     <section>
-        <form>
-            <label for="name">Username</label><br>
-            <input type="text" id="name" minlength="8" required><br>
-            <label for="pass">Password</label><br>
-            <input type="text" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
-            <p>Sex</p>
-            <input type="radio" id="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female">
-            <label for="female">Female</label><br>
-            <input type="checkbox" id="term" required>
-            <label for="term">I accept the Terms and Conditions</label><br>
-            <input type="button" value="Submit">
-        </form>
+        <!-- Thematic Multi Media-->
     </section>
-    <section>
-        <table>
-            <th>Name</th>
-            <th>Age</th>
-            <th>City</th>
-            <tr>
-                <td>John</td>
-                <td>25</td>
-                <td>New York</td>
-            </tr>
-            <tr>
-                <td>Jane</td>
-                <td>30</td>
-                <td>Los Angeles</td>
-            </tr>
-        </table>
+    <hr>
+    <section style="display: grid; grid-template-columns: 30% 40% 30%;">
+        <div></div>
+        <div class="infoCon">
+            <h1 style="color: white; text-shadow: 1px 1px 1px black;">Sign in</h1>
+            <form class="formIn">
+                <label for="name">Username</label><br>
+                <input type="text" id="name" minlength="8" required><br>
+                <label for="pass">Password</label><br>
+                <input type="text" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+                <p>Sex</p>
+                <input type="radio" id="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female">
+                <label for="female">Female</label><br>
+                <input type="checkbox" id="term" required>
+                <label for="term">I accept the Terms and Conditions</label><br>
+                <input type="button" value="Submit">
+            </form>
+        </div>
+        <div></div>
     </section>
-    <footer></footer>
+    <hr>
+    <section style="display: grid; grid-template-columns: 30% 40% 30%;">
+        <div></div>
+        <div class="infoCon">
+            <h1 style="color: white; text-shadow: 1px 1px 1px black;">Users</h1>
+            <table class="userTable">
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <tr>
+                    <td>John</td>
+                    <td>25</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>30</td>
+                    <td>Los Angeles</td>
+                </tr>
+            </table>
+        </div>
+        <div></div>
+    </section>
+    <footer>
+        <hr>
+        <p>Prepared by: Ma. Franchesca G. Urbi</p>
+        <a href="mailto:ckeskaa@gmail.com">ckeskaa@gmail.com</a>
+    </footer>
 </body>
 
 </html>
