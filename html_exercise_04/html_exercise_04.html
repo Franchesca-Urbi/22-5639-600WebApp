@@ -10,27 +10,22 @@
 
 <body>
     <header>
-        <div class="navBar">
-            <nav>
-                <a class="navs" href="#">Home</a>
-                <a class="navs" href="#">Sign Up</a>
-                <a class="navs" href="#">Users List</a>
-                <a class="navs" href="#">About Us</a>
-            </nav>
-        </div>
-
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#signUp">Sign Up</a>
+            <a href="#list">Users List</a>
+            <a href="#footer">About Us</a>
+        </nav>
     </header>
-
-    <div>
-        <img src="MediaFiles/landscape.jpg" alt="Landscape" width=750 height="350"
-            style="margin-left: 30%; margin-top: 40px;">
-    </div>
+    <section id="home">
+        <img src="MediaFiles/landscape.jpg" alt="landscape_image" width=750 height="350">
+    </section>
 
     <hr>
-    <section style="display: grid; grid-template-columns: 30% 40% 30%;">
+    <section id="signUp" style="display: grid; grid-template-columns: 30% 40% 30%;">
         <div></div>
         <div class="infoCon">
-            <h1 style="color: white; text-shadow: 1px 1px 1px black;">Sign in</h1>
+            <h1 style="color: white; text-shadow: 1px 1px 1px black;">Sign Up</h1>
             <form class="formIn">
                 <label for="name">Username</label><br>
                 <input type="text" id="name" minlength="8" required><br>
@@ -51,7 +46,7 @@
 
     <hr>
 
-    <section style="display: grid; grid-template-columns: 30% 40% 30%;">
+    <section id="list" style="display: grid; grid-template-columns: 30% 40% 30%;">
         <div></div>
         <div class="infoCon">
             <h1 style="color: white; text-shadow: 1px 1px 1px black;">Users</h1>
@@ -76,7 +71,7 @@
         <div></div>
     </section>
 
-    <footer>
+    <footer id="footer">
         <hr>
         <p>Prepared by: Ma. Franchesca G. Urbi</p>
         <a href="mailto:ckeskaa@gmail.com">ckeskaa@gmail.com</a>
