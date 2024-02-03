@@ -21,13 +21,18 @@ header a {
     padding: 10px;
 }
 
-section#home{
+section#home {
     margin-top: 100px;
 }
 
-section#home img{
+section#home img {
     display: block;
     margin: auto;
+}
+
+section#signUp {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
 }
 
 div.infoCon {
@@ -36,16 +41,41 @@ div.infoCon {
     padding: 15px;
     box-shadow: 1px 1px 5px;
     border-radius: 5px;
+    grid-column-start: 2;
 }
 
 form.formIn {
+    display: grid;
+    grid-template-columns: 30% 70%;
     color: white;
     text-shadow: 1px 1px 1px black;
 }
 
 input[type=text],
-input[type=password] {
+input[type=password],
+input[type=date] {
+    background-color: rgb(241, 165, 241);
     border-radius: 5px;
+    margin: 3px;
+    align-content: center;
+    text-align: center;
+}
+
+div.sub {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin: 15px 5px 5px 5px;
+}
+
+input#buttonSub {
+    background-color: rgb(203, 83, 230);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding: 5px 50px;
+    box-shadow: 1px 1px 5px rgb(241, 165, 241);
 }
 
 table.userTable {
