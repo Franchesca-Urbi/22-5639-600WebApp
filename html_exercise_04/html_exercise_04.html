@@ -10,33 +10,38 @@
 
 <body>
     <header>
+        <h1>Purple Co.</h1>
         <nav>
             <a href="#home">Home</a>
             <a href="#signUp">Sign Up</a>
-            <a href="#list">Users List</a>
+            <a href="#list">Creators</a>
             <a href="#footer">About Us</a>
         </nav>
     </header>
     <section id="home">
-        <img src="MediaFiles/landscape.jpg" alt="landscape_image" width=750 height="350">
+        <div class="infoCon">
+            <h2>Art of the Day</h2>
+            <img src="MediaFiles/landscape.jpg" alt="landscape_image" width=750 height="350">
+            <div class="artInfo">
+                <label><cite style="font-size: 1.25em;">Purple Memories</cite></label><br>
+                <label>by <abbr title="Doctor" style="text-decoration: none;">Dr.</abbr> Annaliese Mercadejas</label>
+            </div>
+            <div class="artNotes">
+                <h3>Artist's Notes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus assumenda cumque exercitationem ab quos doloremque illum, ducimus pariatur reiciendis, aut quia? Possimus nesciunt et ipsam blanditiis dicta recusandae magni assumenda.
+                Labore sint quis quaerat voluptatum expedita! Nostrum repellat eum cupiditate. Odit quisquam aliquam ullam, vitae corrupti voluptates! Excepturi rerum aspernatur ducimus illo adipisci tempora cum, at nesciunt nobis, libero assumenda?</p>
+            </div>
+        </div>
     </section>
 
     <hr>
-    <section id="signUp">
+    <section id="signUp" class="contents">
         <div class="infoCon">
-            <h1 style="color: white; text-shadow: 1px 1px 1px black;">Sign Up</h1>
+            <h2>Sign Up</h2>
             <form class="formIn">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" minlength="8" required>
-                <label for="bDate">Birthdate</label>
-                <input type="date" name="bDate" id="bDate" required>
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email">
-                <label for="pass">Password</label>
-                <input type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                <label for="conPass">Confirm Password</label>
-                <input type="password" name="conPass" id="conPass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                Sex
+                <label>Sex</label> 
                 <div style="display: grid; grid-template-columns: 50% 50%; text-align: center;">
                     <div>
                         <input type="radio" name="gender" id="male">
@@ -47,6 +52,16 @@
                         <label for="female">Female</label><br>
                     </div>
                 </div>
+                <label for="bDate">Birthdate</label>
+                <input type="date" name="bDate" id="bDate" required>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <label for="conPass">Confirm Password</label>
+                <input type="password" name="conPass" id="conPass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    required>
+                
                 <div style="grid-column-start: 1; grid-column-end: 3; text-align: center; margin-top: 5px;">
                     <input type="checkbox" name="terms" id="terms" required>
                     <label for="terms">I accept the Terms and Conditions</label>
@@ -58,14 +73,13 @@
         </div>
     </section>
     <hr>
-    <section id="list" style="display: grid; grid-template-columns: 30% 40% 30%;">
-        <div></div>
+    <section id="list" class="contents">
         <div class="infoCon">
-            <h1 style="color: white; text-shadow: 1px 1px 1px black;">Users</h1>
+            <h2>Creators</h2>
             <table class="userTable">
                 <tr>
                     <th>Name</th>
-                    <th>Age</th>
+                    <th>Creations</th>
                     <th>City</th>
                 </tr>
                 <tr>
@@ -80,12 +94,10 @@
                 </tr>
             </table>
         </div>
-        <div></div>
     </section>
-
+    <hr>
     <footer id="footer">
-        <hr>
-        <p>Prepared by: Ma. Franchesca G. Urbi</p>
+        <h4>Purple Co.</h4>
         <a href="mailto:ckeskaa@gmail.com">ckeskaa@gmail.com</a>
     </footer>
     <script type="text/javascript" src="script.js"></script>
