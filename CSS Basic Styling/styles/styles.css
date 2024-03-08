@@ -1,0 +1,156 @@
+html {
+    scroll-padding-top: 60px;
+}
+
+body {
+    background-color: rgb(241, 165, 241);
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0;
+    background-color: purple;
+    box-shadow: 1px 1px 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    align-items: center;
+}
+
+header h1 {
+    color: rgb(216, 64, 216);
+    text-shadow: 1px 1px 5px black;
+    margin: 5px 0 5px 10px;
+}
+
+h2 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+header nav {
+    text-align: end;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    padding: 10px;
+    height: 100%;
+}
+
+nav a:hover {
+    background-color: rgb(246, 179, 246);
+    color: purple;
+    text-shadow: 1px 1px 1px white;
+}
+
+section#home {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    margin-top: 60px;
+}
+
+div.artInfo {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin: 5px;
+}
+
+div.artNotes {
+    background-color: rgb(183, 91, 183);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    padding: 10px;
+    margin: auto 50px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+div.artNotes p{
+    text-align: justify;
+}
+
+section#home img {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+}
+
+section.contents {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+div.infoCon {
+    background-color: rgb(137, 50, 137);
+    min-width: 400px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 5px;
+    grid-column-start: 2;
+}
+
+
+form.formIn {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+input[type=text],
+input[type=password],
+input[type=date] {
+    background-color: rgb(241, 165, 241);
+    border-radius: 5px;
+    margin: 3px;
+    align-content: center;
+    text-align: center;
+}
+
+div.sub {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin: 15px 5px 5px 5px;
+}
+
+input#buttonSub {
+    background-color: rgb(183, 91, 183);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding: 5px 50px;
+    box-shadow: 1px 1px 3px black;
+}
+
+table.userTable {
+    background-color: rgb(241, 165, 241);
+    width: 100%;
+    border-radius: 5px;
+}
+
+td,
+th {
+    text-align: center;
+}
+hr{
+    margin: 50px 0;
+}
+footer {
+    background-color: rgb(137, 50, 137);
+    padding: 15px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+}
