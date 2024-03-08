@@ -19,7 +19,7 @@ header {
     align-items: center;
 }
 
-header h1 {
+h1 {
     color: rgb(216, 64, 216);
     text-shadow: 1px 1px 5px black;
     margin: 5px 0 5px 10px;
@@ -31,11 +31,16 @@ h2 {
     text-align: center;
 }
 
+h3{
+    color: rgb(216, 64, 216);
+    text-shadow: 1px 1px 5px black;
+}
 header nav {
     text-align: end;
     margin-right: 10px;
     padding: 10px;
 }
+
 
 nav a {
     color: white;
@@ -135,7 +140,7 @@ input#buttonSub {
     box-shadow: 1px 1px 3px black;
 }
 
-table.userTable {
+table.creatorTable {
     background-color: rgb(241, 165, 241);
     width: 100%;
     border-radius: 5px;
