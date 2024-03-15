@@ -16,7 +16,7 @@
         .canvas {
             position: relative;
             height: 600px;
-            background-color: rgb(55, 198, 55);
+            background-color: rgb(57, 114, 4);
             border-radius: 35%;
             margin: 0 25px;
             border: 1px solid black;
@@ -29,7 +29,7 @@
             border-top-left-radius: 35%;
             border-top-right-radius: 35%;
             background-color: skyblue;
-            background-image: linear-gradient(rgb(244, 75, 244), rgb(42, 2, 46));
+            background-image: linear-gradient(rgb(255, 255, 255), rgb(240, 229, 112), rgb(255, 102, 0), rgb(230, 53, 53));
         }
 
         .head {
@@ -42,6 +42,7 @@
             left: 130px;
             margin: 125px auto 0 auto;
             background: yellow;
+            box-shadow: 0px 0px 10px;
         }
 
         .eyeball {
@@ -54,7 +55,7 @@
             rotate: 15deg;
             border-radius: 50%;
             background: white;
-            box-shadow: 1px 1px 1px;
+            box-shadow: 0px 0px 5px;
         }
 
         .pupil {
@@ -76,7 +77,7 @@
             height: 30px;
             width: 50px;
             font-size: 50px;
-            color: red;
+            color: black;
         }
 
         .body {
@@ -87,6 +88,8 @@
             border-radius: 50%;
             top: 70px;
             background: yellow;
+            z-index: 1;
+            box-shadow: 0px 0px 10px;
         }
 
         .wing {
@@ -95,19 +98,20 @@
             top: 30px;
             left: 70px;
             rotate: 15deg;
-            color: red;
+            color: black;
         }
 
         .drumsticks {
             position: relative;
             display: flex;
             justify-content: center;
-            top: 75px;
+            top: 73px;
+            right: 15px;
         }
 
         .drumstick {
             position: relative;      
-            color: orangered;
+            color: black;
             text-align: center;
             font-size: 35px;
             font-weight: bolder;
@@ -115,7 +119,8 @@
         }
 
         .drumstick-right {
-
+            position: relative;
+            left: 15px;
         }
     </style>
     <div class="canvas background">
